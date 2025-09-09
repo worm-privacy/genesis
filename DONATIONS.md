@@ -188,6 +188,7 @@ List of the wallets who donated to the first round of public fund raising campai
 | 0x811c7e66f0a8ad43874db3dacb3c6adf51ae1fde | 0.015 |
 | 0x6b02fc0c572911c106a5decf2e68322c3f89fe10 | 0.015 |
 | 0xd2f2df46b78b39a51b89e00e1354873a0072baf2 | 0.015 |
+| 0x2Acdf6a2f893687CcD341a1Ad7e27102b665d8c4 | 0.01162713 |
 | 0x839ff26e1bf98d810b23029309265eb16e71fdb6 | 0.011 |
 | 0xdc68406ae47501f2ae5a86b6bb1f66e1415e3beb | 0.011 |
 | 0xf472996d6b6adbe0e8fdcae118ba67a6df90f4c6 | 0.011 |
