@@ -774,3 +774,5 @@ List of the wallets who donated to the first round of public fund raising campai
 | 0xae9e60ef5206c9953ecf12469bafeb3816f60321 | 0.0005 |
 | 0x6022c231df4f4a030ec8ef5480f3a0c5dd5d10da | 0.00006 |
 | 0xd2528f2bf3b572c8bcd409381fad3194bbbebda2 | 0.000001 |
+
+(If you missed the campaign yet still want to donate please reach @keyvankambakhsh on Telegram)
