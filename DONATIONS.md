@@ -4,6 +4,7 @@ List of the wallets who donated to the first round of public fund raising campai
 
 | Wallet Address                             | Amount (ETH) |
 |--------------------------------------------|--------------|
+| 0x31961840ad769dbb293803ce63029cdfcd33abbf | 3 |
 | 0x5d8809340760b1bb54642be91bb5a2871c0d7a10 | 2 |
 | 0xcf2b7c6bc98bfe0d6138a25a3b6162b51f75e05d | 1.14 |
 | 0xa5e147c0964eac20d9d042667fdd2b228e127922 | 1.08 |
@@ -34,6 +35,7 @@ List of the wallets who donated to the first round of public fund raising campai
 | 0x5f24d7260c53311d236bf7aee4bdff233bb3a3f4 | 0.3 |
 | 0xa90bd94a7d18f4d98777422c2aabad8f4adb3dc9 | 0.3 |
 | 0x495ab1604aa9c8dcc4a1dd8cd4c82403da6bc893 | 0.3 |
+| 0xB95C88262f6632e4b7C94432B6A360C19e642E10 | 0.3 |
 | 0x45f25a7bd87a36b22ef8decd237ff89c6e286a96 | 0.266 |
 | 0x003f35595dce3187b4fff2b5a2c4303f7158208a | 0.25 |
 | 0x49c114120ea24c29a2c1bac004c016eaf3e41d27 | 0.25 |
