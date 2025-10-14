@@ -8,6 +8,7 @@ List of the wallets who donated to the first round of public fund raising campai
 | 0x5d8809340760b1bb54642be91bb5a2871c0d7a10 | 2 |
 | 0x830F13c7E038eBc64050e35c82167096D56ED7Ee | 2 |
 | 0xcf2b7c6bc98bfe0d6138a25a3b6162b51f75e05d | 1.14 |
+| 0xe2768806620471D87771Da5195A6494800Dc700e | 1.1 |
 | 0xa5e147c0964eac20d9d042667fdd2b228e127922 | 1.08 |
 | 0xb2929cd026a23aac1b5d5699e56c9dff26b60eb3 | 1 |
 | 0x84afb4b60844f8759154d6ff7b0580daa2d4e37d | 1 |
@@ -16,6 +17,7 @@ List of the wallets who donated to the first round of public fund raising campai
 | 0xfdf3494b9bc6d8389473fd18b6b02289f4a14d41 | 1 |
 | 0x4b1657eabdefb7133db70444c83149b0846c5032 | 1 |
 | 0xaf4807d083287f205d897e6d00c6fde1bf0a241a | 1 |
+| 0x9240b9Db1e72116b1e4B04F8D29eCe09f0f81B49 | 1 |
 | 0xc54400aaa119d66c5453f1a0fa0caa8f5afb04c0 | 0.775 |
 | 0x7d5d6229e0d0b8e8fd88c6036227938e79b10214 | 0.7 |
 | 0xf382b969f7859b833f25da6a6f74bfbd0462f841 | 0.68 |
