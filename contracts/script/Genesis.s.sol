@@ -10,10 +10,10 @@ contract GenesisScript is Script {
 
     function setUp() public {}
 
-    function run(address _master, IERC20 _token) public {
+    function run(address _master, IERC20 _token, IERC20 _wrapperToken) public {
         vm.startBroadcast();
 
-        genesis = new Genesis(_master, _token);
+        genesis = new Genesis(_master, _token, _wrapperToken);
 
         vm.stopBroadcast();
     }

@@ -24,6 +24,7 @@ contract GenesisTest is Test {
 
     Genesis genesis;
     MockToken token;
+    MockToken wrapperToken;
 
     uint256 masterKey = 0xABCD;
     address master = vm.addr(0xABCD);
@@ -33,10 +34,12 @@ contract GenesisTest is Test {
         vm.warp(123456);
 
         token = new MockToken();
-        genesis = new Genesis(master, IERC20(token));
+        wrapperToken = new MockToken();
+        genesis = new Genesis(master, IERC20(token), IERC20(wrapperToken));
 
         // Fund contract with tokens
         token.mint(address(genesis), 1_000_000 ether);
+        wrapperToken.mint(user, 100 ether);
     }
 
     function _signShare(Genesis.Share memory share, uint256 privKey) internal returns (bytes memory) {
@@ -155,5 +158,22 @@ contract GenesisTest is Test {
         vm.prank(user);
         vm.expectRevert("Nothing to claim!");
         genesis.trigger(5);
+    }
+
+    function testRedeemWrapperToken() public {
+        uint256 redeemAmount = 30 ether;
+
+        // User approves Genesis contract to spend wrapperToken
+        vm.prank(user);
+        wrapperToken.approve(address(genesis), redeemAmount);
+
+        // Redeem
+        vm.prank(user);
+        genesis.redeem(redeemAmount);
+
+        // Check balances
+        assertEq(wrapperToken.balanceOf(user), 70 ether); // 100 - 30
+        assertEq(token.balanceOf(user), redeemAmount); // received 30 token
+        assertEq(wrapperToken.balanceOf(address(genesis)), redeemAmount); // Genesis holds redeemed wrapperToken
     }
 }

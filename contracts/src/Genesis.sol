@@ -15,6 +15,9 @@ contract Genesis is ReentrancyGuard {
     /// @notice Address authorized to sign valid Share objects.
     address public master;
 
+    /// @notice 1:1 wrapper-token which can be redeemed with actual token
+    IERC20 public wrapperToken;
+
     /// @notice ERC20 token distributed by this contract.
     IERC20 public token;
 
@@ -54,9 +57,10 @@ contract Genesis is ReentrancyGuard {
     /// @notice Emitted if calculated claimable > total, indicating inconsistent share data.
     event ClaimableMoreThanTotal(uint256 shareId);
 
-    constructor(address _master, IERC20 _token) {
+    constructor(address _master, IERC20 _token, IERC20 _wrapperToken) {
         master = _master;
         token = _token;
+        wrapperToken = _wrapperToken;
     }
 
     /**
@@ -128,5 +132,19 @@ contract Genesis is ReentrancyGuard {
         require(shareClaimed[_shareId] <= total, "Can't claim more than total!");
 
         token.safeTransfer(owner, amount);
+    }
+
+    /**
+     * @notice Redeem `wrapperToken` for the underlying `token` at 1:1 ratio.
+     * @param amount Amount of wrapperToken to redeem.
+     */
+    function redeem(uint256 amount) external nonReentrant {
+        require(amount > 0, "Amount must be > 0");
+
+        // Transfer wrapperToken from user to contract
+        wrapperToken.safeTransferFrom(msg.sender, address(this), amount);
+
+        // Transfer underlying token to user
+        token.safeTransfer(msg.sender, amount);
     }
 }
