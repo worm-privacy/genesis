@@ -12,32 +12,46 @@ contract Genesis is ReentrancyGuard {
     using MessageHashUtils for bytes32;
     using SafeERC20 for IERC20;
 
+    /// @notice Address authorized to sign valid Share objects.
     address public master;
+
+    /// @notice ERC20 token distributed by this contract.
     IERC20 public token;
 
     struct SharpEmission {
-        uint256 startTime;
-        uint256 amount;
+        uint256 startTime; // Timestamp when this one-time emission becomes claimable
+        uint256 amount; // Fixed amount that becomes instantly claimable at startTime
+    }
+
+    struct LinearEmission {
+        uint256 startTime; // Timestamp when linear emission starts accruing
+        uint256 amountPerSecond; // Number of tokens emitted per second after startTime
+        uint256 cap; // Maximum amount that can ever be emitted linearly (hard cap)
     }
 
     struct Share {
-        uint256 id;
-        address owner;
+        uint256 id; // Unique identifier for the share
+        address owner; // Address that can claim this share's emissions
 
-        SharpEmission[] sharpEmissions;
+        SharpEmission[] sharpEmissions; // List of discrete time-based emissions that unlock instantly when reached
+        LinearEmission linearEmission; // Emission that unlocks gradually over time at a fixed rate
 
-        uint256 linearEmissionStartTime;
-        uint256 linearEmissionCoinPerSecond;
-        uint256 linearEmissionCap;
-
-        uint256 total;
+        uint256 totalCap; // Maximum total amount that can ever be claimed (sharp + linear combined)
     }
 
+    /// @notice Stores all revealed shares by ID.
     mapping(uint256 => Share) public shares;
+
+    /// @notice Tracks whether a share ID has been revealed (cannot be revealed twice).
     mapping(uint256 => bool) public shareRevealed;
+
+    /// @notice Tracks how much has already been claimed for each share.
     mapping(uint256 => uint256) public shareClaimed;
 
+    /// @notice Emitted when a share is successfully revealed.
     event ShareRevealed(Share share);
+
+    /// @notice Emitted if calculated claimable > total, indicating inconsistent share data.
     event ClaimableMoreThanTotal(uint256 shareId);
 
     constructor(address _master, IERC20 _token) {
@@ -63,15 +77,16 @@ contract Genesis is ReentrancyGuard {
             }
         }
 
-        if (block.timestamp > share.linearEmissionStartTime) {
-            uint256 linearPart = share.linearEmissionCoinPerSecond * (block.timestamp - share.linearEmissionStartTime);
-            if (linearPart > share.linearEmissionCap) {
-                linearPart = share.linearEmissionCap;
+        if (block.timestamp > share.linearEmission.startTime) {
+            uint256 linearPart =
+                share.linearEmission.amountPerSecond * (block.timestamp - share.linearEmission.startTime);
+            if (linearPart > share.linearEmission.cap) {
+                linearPart = share.linearEmission.cap;
             }
             claimable += linearPart;
         }
 
-        return (share.owner, claimable, share.total);
+        return (share.owner, claimable, share.totalCap);
     }
 
     /**
