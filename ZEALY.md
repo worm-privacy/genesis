@@ -175,7 +175,7 @@ Genesis distribution of WORM according to contributions on the Zealy campaign.
 | 0x8d8deb74541d88e28d1ec8fe65c6d22a9d9db2d9 | 0.2800% |
 | 0xf7a4c5de0d85211d9d261dd5d17b46a5b5123d8b | 0.2800% |
 | 0xdb0fab61cb031ffe97f7e88f54b2298889d5bd5a | 0.2800% |
-| 0x6ff05897c19ddd641566b6b7c5a3a508320ea789 | 0.2800% |
+| 0xaad75a30a7dbb61840be527a8812debf85abfbcf | 0.2800% |
 | 0xaa6e325896010a70f09c94bc539008cdfc6a8429 | 0.2800% |
 | 0x2168c788ec5dc67652e31d3d8297b6df9cc21a08 | 0.2800% |
 | 0x5307d072632b8205d4a322fa7cedd78348a035b5 | 0.2696% |
