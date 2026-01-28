@@ -1,0 +1,22 @@
+[
+  {
+    "id": "100",
+    "owner": "0x068842FCf7D6EB04255fe8BeB7224C0FE0506b92",
+    "tge": "1000000000000000000",
+    "startTime": "1769604783",
+    "initialAmount": "500000000000000000",
+    "amountPerSecond": "10000000",
+    "totalCap": "10000000000000000000",
+    "sig": "0x2d7603598774ea0dfa0c280edb159cefee2eb3caa87d034a09317da4e343ec50613fa84e91d6e24f8ff6c789852d9dea207a0d8e72038eb58d725124998399fe1c"
+  },
+  {
+    "id": "200",
+    "owner": "0x068842FCf7D6EB04255fe8BeB7224C0FE0506b92",
+    "tge": "1000000000000000000",
+    "startTime": "1769604783",
+    "initialAmount": "100000000000000000",
+    "amountPerSecond": "100000000",
+    "totalCap": "5000000000000000000",
+    "sig": "0xf0890daf3488c19b1a8e21b3bb3a86d0371a8843e07d228854aea57d06956c4424123e1514f2de018da31702f50a6330dff0153a11709304c132397a9f30c2551b"
+  }
+]
