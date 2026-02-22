@@ -13,7 +13,7 @@ Below you can find the accumulated rewards for WORM's 5 incentivized testnets:
 Notes:
 
 * 50% of rewards will be released immediately after 9th March 2PM UTC.
-* Remaining 80% will be distributed with a 1 month cliff and 6 month vesting schedule.
+* Remaining 50% will be distributed with a 1 month cliff and 6 month vesting schedule.
 
 | Address                                    | WORM       |
 | ------------------------------------------ | ----------- |
