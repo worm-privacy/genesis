@@ -4,7 +4,9 @@ List of the wallets who donated to the second round of public fund raising campa
 
 | Wallet Address                             | Amount (ETH) | Memo | 
 |--------------------------------------------|--------------|------|
+| 0xd735edb8d3a6f3efad87d7c37c812f720c9b9783 | 3.1 |  |
 | 0x32B87cFFF2f4843b7b9ec60AE0b5d014F975331A | 1 | LFG |
+| 0x155906c3090287d65a297c93b6eb0c5ac0ca4572 | 1 |  |
 | 0x8698d6f631E43c141085dc170E514729E39fF066 | 0.62 |  |
 | 0x325997931138ccf59aC8e3524C4Ed2835152AADD | 0.51 | WORM WOW |
 | 0xfA7F0cf6E689c75b1226417fCF7C2d0Cd9Cc089B | 0.5 |  |
@@ -12,6 +14,7 @@ List of the wallets who donated to the second round of public fund raising campa
 | 0x7AA335dAC1C7920D0a44F2261886Cf89D1Ce1A64 | 0.38 |  |
 | 0x0cd7E1660D63a6aEbDA782a2Eb7f2875716aC3E8 | 0.37 | outofgas@qq.com |
 | 0x1c29082C8E4cc328bEF3c03b4AffAae49373B078 | 0.3 |  |
+| 0xd85c57a93afe4ac27835e02e3f33197db373c162 | 0.2784 |  |
 | 0x003F35595dce3187B4Fff2B5A2c4303f7158208a | 0.25 | donated once in sept, and once again now. gworm! |
 | 0xdce8f21fCE964796BA522449664d72412db3F948 | 0.25 |  |
 | 0x04d7BCF273C5b0DeB7cE3F59f70be6bF933C47C7 | 0.2 |  |
