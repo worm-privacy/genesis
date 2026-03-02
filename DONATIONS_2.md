@@ -4,7 +4,6 @@ List of the wallets who donated to the second round of public fund raising campa
 
 | Wallet Address                             | Amount (ETH) | Memo | 
 |--------------------------------------------|--------------|------|
-| 0xd735edb8d3a6f3efad87d7c37c812f720c9b9783 | 3.1 |  |
 | 0x32B87cFFF2f4843b7b9ec60AE0b5d014F975331A | 1 | LFG |
 | 0x155906c3090287d65a297c93b6eb0c5ac0ca4572 | 1 |  |
 | 0x8698d6f631E43c141085dc170E514729E39fF066 | 0.62 |  |
